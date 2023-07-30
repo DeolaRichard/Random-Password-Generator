@@ -25,4 +25,13 @@ for num in nums:
         print(num)
         break  # to jump out of the loop
 else:
-        print("Not Found")
+    print("Not Found")
+
+# To find if a number is prime or not
+num = int(input("Write a number to check: "))  # accept input from user
+for i in range(2, num):
+    if num % i == 0:  # check if the number is divisible by each number in iteration
+        print("Not a Prime Number")
+        break
+else:
+    print("Is a Prime Number")
